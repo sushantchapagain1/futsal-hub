@@ -29,10 +29,10 @@ const links = [
 
 function Navbar() {
   return (
-    <div className="flex items-center justify-between">
+    <header className="flex items-center justify-between">
       <Logo />
       <NavLink links={links} />
-    </div>
+    </header>
   );
 }
 

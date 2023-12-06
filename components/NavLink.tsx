@@ -15,6 +15,8 @@ function NavLink({ links }: any) {
               <Link
                 href={link.href}
                 className={`${isActive ? 'text-teal-500' : ''}`}
+                role="link"
+                aria-current={isActive ? 'page' : 'false'}
               >
                 {link.label}
               </Link>
