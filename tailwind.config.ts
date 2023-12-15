@@ -20,6 +20,7 @@ module.exports = {
         border: 'var(--border)',
         input: 'var(--input)',
         ring: 'var(--ring)',
+        brand: 'var(--brand)',
         background: 'var(--background)',
         foreground: 'var(--foreground)',
         primary: {

@@ -4,6 +4,8 @@
 
 @layer base {
   :root {
+    --brand: hsl(243, 75%, 59%);
+
     --background: hsl(0, 0%, 100%);
     --foreground: hsl(0, 0%, 3.9%);
 
@@ -34,7 +36,6 @@
 
     --radius: 0.5rem;
   }
-
   .dark {
     --background: hsl(0, 0%, 3.9%);
     --foreground: hsl(0, 0%, 98%);
@@ -63,5 +64,14 @@
     --border: hsl(0, 0%, 14.9%);
     --input: hsl(0, 0%, 14.9%);
     --ring: hsl(0, 0%, 83.1%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
