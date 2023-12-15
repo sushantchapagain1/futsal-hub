@@ -17,38 +17,38 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: 'var(--border-color)',
-        input: 'var(--input-color)',
-        ring: 'var(--ring-color)',
-        background: 'var(--background-color)',
-        foreground: 'var(--foreground-color)',
+        border: 'var(--border)',
+        input: 'var(--input)',
+        ring: 'var(--ring)',
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
         primary: {
-          DEFAULT: 'var(--primary-color)',
-          foreground: 'var(--primary-foreground-color)',
+          DEFAULT: 'var(--primary)',
+          foreground: 'var(--primary-foreground)',
         },
         secondary: {
-          DEFAULT: 'var(--secondary-color)',
-          foreground: 'var(--secondary-foreground-color)',
+          DEFAULT: 'var(--secondary)',
+          foreground: 'var(--secondary-foreground)',
         },
         destructive: {
-          DEFAULT: 'var(--destructive-color)',
-          foreground: 'var(--destructive-foreground-color)',
+          DEFAULT: 'var(--destructive)',
+          foreground: 'var(--destructive-foreground)',
         },
         muted: {
-          DEFAULT: 'var(--muted-color)',
-          foreground: 'var(--muted-foreground-color)',
+          DEFAULT: 'var(--muted)',
+          foreground: 'var(--muted-foreground)',
         },
         accent: {
-          DEFAULT: 'var(--accent-color)',
-          foreground: 'var(--accent-foreground-color)',
+          DEFAULT: 'var(--accent)',
+          foreground: 'var(--accent-foreground)',
         },
         popover: {
-          DEFAULT: 'var(--popover-color)',
-          foreground: 'var(--popover-foreground-color)',
+          DEFAULT: 'var(--popover)',
+          foreground: 'var(--popover-foreground)',
         },
         card: {
-          DEFAULT: 'var(--card-color)',
-          foreground: 'var(--card-foreground-color)',
+          DEFAULT: 'var(--card)',
+          foreground: 'var(--card-foreground)',
         },
       },
       borderRadius: {
@@ -56,6 +56,21 @@ module.exports = {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
+      keyframes: {
+        'accordion-down': {
+          from: { height: 0 },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: 0 },
+        },
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
+      },
     },
   },
+  plugins: [require('tailwindcss-animate')],
 };
