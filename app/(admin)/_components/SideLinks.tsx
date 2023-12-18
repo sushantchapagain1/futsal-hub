@@ -16,25 +16,27 @@ function SideLinks({ links }: Links) {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-1 flex-row justify-evenly gap-3  md:flex-grow-0 md:flex-col">
+    <ul className="flex flex-1 flex-row justify-evenly gap-3  md:flex-grow-0 md:flex-col">
       {links.map((link) => {
         const isActive = pathname === link.href;
 
         return (
-          <Link
-            key={link.href}
-            href={link.href}
-            className={cn(
-              'flex w-fit space-x-3 rounded-md p-3 md:w-auto md:p-3',
-              isActive && 'bg-secondary',
-            )}
-          >
-            <span className={cn(isActive && 'text-brand')}>{link.icon}</span>
-            <span className="hidden md:block">{link.label}</span>
-          </Link>
+          <li key={link.href}>
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                'flex w-fit space-x-3 rounded-md p-3 font-medium md:w-auto md:p-3',
+                isActive && 'bg-secondary',
+              )}
+            >
+              <span className={cn(isActive && 'text-brand')}>{link.icon}</span>
+              <span className="hidden md:block">{link.label}</span>
+            </Link>
+          </li>
         );
       })}
-    </div>
+    </ul>
   );
 }
 

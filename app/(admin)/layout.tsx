@@ -8,7 +8,7 @@ function AdminLayout({ children }: { children: React.ReactNode }) {
       <aside className="fixed bottom-0 w-full border md:static md:row-span-full">
         <Sidenav />
       </aside>
-      <main className="p-3">{children}</main>
+      <main className="container p-3 md:p-6">{children}</main>
     </div>
   );
 }
