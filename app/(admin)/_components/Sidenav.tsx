@@ -20,7 +20,7 @@ const links = [
 
 function Sidenav() {
   return (
-    <nav className="flex h-full w-full gap-9 py-3 md:flex-col md:px-3">
+    <nav className="z-[99] flex h-full w-full gap-9 md:flex-col md:px-3">
       <Logo />
       <SideLinks links={links} />
     </nav>

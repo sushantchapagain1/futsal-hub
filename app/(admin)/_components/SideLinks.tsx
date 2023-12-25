@@ -16,7 +16,7 @@ function SideLinks({ links }: Links) {
   const pathname = usePathname();
 
   return (
-    <ul className="flex flex-1 flex-row justify-evenly gap-3  md:flex-grow-0 md:flex-col">
+    <ul className="flex flex-1 flex-row justify-evenly gap-3 bg-background py-3 md:flex-grow-0 md:flex-col md:bg-transparent">
       {links.map((link) => {
         const isActive = pathname === link.href;
 
