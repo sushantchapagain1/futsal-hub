@@ -16,7 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" className="">
+      {/* applies to all layout in app */}
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );

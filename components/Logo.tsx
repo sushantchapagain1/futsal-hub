@@ -1,11 +1,10 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 function Logo() {
   return (
-    <Link href="/" role="link" className="hidden md:block">
-      <span className=" p-3 text-xl font-medium uppercase tracking-widest md:block">
-        Futsalhub
-      </span>
+    <Link href="/" role="link">
+      <Image src="/logo.png" alt="app_logo" height={150} width={200} />
     </Link>
   );
 }

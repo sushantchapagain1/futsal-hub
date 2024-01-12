@@ -7,7 +7,7 @@ import {
   Users,
 } from 'lucide-react';
 
-import Logo from '@/components/Logo';
+import AdminLogo from './AdminLogo';
 import SideLinks from './SideLinks';
 
 const links = [
@@ -21,7 +21,7 @@ const links = [
 function Sidenav() {
   return (
     <nav className="z-[99] flex h-full w-full gap-9 md:flex-col md:px-3">
-      <Logo />
+      <AdminLogo />
       <SideLinks links={links} />
     </nav>
   );
