@@ -13,20 +13,20 @@ type Links = {
 function NavLink({ links }: Links) {
   const pathname = usePathname();
   return (
-    <ul className=" hidden sm:flex sm:gap-6">
+    <ul className="hidden sm:flex sm:gap-6">
       {links.map((link) => {
         const isActive = pathname === link.href;
 
         return (
           <li
             className={cn(
-              `inline-block py-2 font-medium 
-             after:block after:h-[2px] after:w-0 
-            after:bg-sky-500 after:transition-[width] after:duration-300
-            after:content-[''] last:rounded-full last:bg-sky-500 last:px-6
-            last:text-center last:text-white hover:after:w-full hover:after:transition-[width] hover:after:duration-300
+              `inline-block font-medium
+               after:block after:h-[3px] 
+               after:w-0 after:bg-sky-500 after:transition-[width]
+               after:duration-300 after:content-[''] 
+               hover:after:w-full hover:after:transition-[width] hover:after:duration-300
             `,
-              isActive ? 'text-sky-500' : '',
+              isActive ? ' text-sky-500' : '',
             )}
             key={link.href}
           >

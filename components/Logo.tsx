@@ -4,7 +4,7 @@ import Link from 'next/link';
 function Logo() {
   return (
     <Link href="/" role="link">
-      <Image src="/logo.png" alt="app_logo" height={150} width={200} />
+      <Image src="/logo.png" alt="app_logo" height={50} width={200} />
     </Link>
   );
 }

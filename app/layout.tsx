@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Red_Rose } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const redRose = Red_Rose({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Futsal Hub',
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="">
       {/* applies to all layout in app */}
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${redRose.className} antialiased`}>{children}</body>
     </html>
   );
 }
