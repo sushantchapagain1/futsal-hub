@@ -12,7 +12,7 @@ module.exports = {
       center: true,
       padding: '2rem',
       screens: {
-        '2xl': '1400px',
+        '2xl': '1300px',
       },
     },
     extend: {
@@ -20,7 +20,7 @@ module.exports = {
         border: 'var(--border)',
         input: 'var(--input)',
         ring: 'var(--ring)',
-        brand: 'var(--brand)',
+        brand: 'var(--fui-primary)',
         background: 'var(--background)',
         foreground: 'var(--foreground)',
         primary: {

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import { Red_Rose } from 'next/font/google';
+import { Open_Sans } from 'next/font/google';
 import './globals.css';
 
-const redRose = Red_Rose({ subsets: ['latin'] });
+const open_sans = Open_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Futsal Hub',
@@ -17,8 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="">
-      {/* applies to all layout in app */}
-      <body className={`${redRose.className} antialiased`}>{children}</body>
+      <body className={`${open_sans.className} antialiased`}>{children}</body>
     </html>
   );
 }

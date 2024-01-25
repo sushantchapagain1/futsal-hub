@@ -13,23 +13,21 @@ const links = [
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between">
+    <nav className="flex items-center justify-between p-3">
       <Logo />
-      <NavLink links={links} />
-      <div>
+      <div className="flex items-center sm:gap-6">
+        <NavLink links={links} />
         <Button
-          variant="default"
-          size={'default'}
-          className="hidden font-medium sm:block"
+          variant="secondary"
+          size="default"
+          className="hidden text-base font-medium sm:block"
         >
           Login
         </Button>
-        {/*TODO trapeziod   */}
-        <div />
+        <Button variant="ghost" className="cursor-pointer text-white sm:hidden">
+          <Menu />
+        </Button>
       </div>
-      <button className="cursor-pointer sm:hidden">
-        <Menu />
-      </button>
     </nav>
   );
 }

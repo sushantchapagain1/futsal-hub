@@ -1,38 +1,33 @@
 import React from 'react';
-import { Button } from './ui/button';
 import Image from 'next/image';
+import Navbar from './Navbar';
 
 function Hero() {
   return (
-    <div className="grid p-3 sm:p-6 md:grid-cols-2 md:p-9">
-      {/* left side */}
-      <div className="relative gap-3 justify-self-end sm:gap-6">
-        <h2 className="text-4xl capitalize lg:text-6xl ">
-          Let&apos;s Book like
-          <span className="font-semibold md:text-7xl"> future</span>
-        </h2>
-        <div className="my-3 sm:my-6 ">
-          <p className="text-justify">
-            Explore futsal courts near you by searching or giving you location.
-          </p>
-          <p>
-            Now you can book the nearby futsals with seeing the availability.
-          </p>
+    <div className="bg-brand">
+      <div className="lg:container">
+        <Navbar />
+        <div className="flex flex-col items-center justify-between gap-9 py-16 sm:mx-5 lg:flex-row">
+          {/* left side */}
+          <div className="self-center">
+            <h2 className="mb-3 text-xl font-extrabold text-white sm:text-2xl md:text-5xl">
+              Find available futsal near you
+            </h2>
+            <p className="text-xl text-white">
+              Search and book your matching futsal by location, price,
+              availiblity and more.
+            </p>
+          </div>
+          {/* right side */}
+          <div>
+            <Image
+              src="/football.png"
+              alt="Football image"
+              height={200}
+              width={200}
+            />
+          </div>
         </div>
-        <Button variant="default" className="mt-6">
-          Book
-        </Button>
-        <div className="fill-[linear-gradient(180deg,hsla(194.35294117647058, 100%, 50%, 0.467)_99.99%,rgba(0,255,148,0.00)_100%)] absolute inset-0 h-72 w-96 bg-[#00c2ff77] bg-blend-darken blur-3xl" />
-      </div>
-      {/* right side */}
-      <div className="justify-self-center">
-        <Image
-          src="/football.png"
-          alt="Football image"
-          height={250}
-          width={250}
-          className="duration-[2000ms] animate-bounce transition-all"
-        />
       </div>
     </div>
   );

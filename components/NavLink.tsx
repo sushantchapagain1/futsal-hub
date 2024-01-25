@@ -20,13 +20,13 @@ function NavLink({ links }: Links) {
         return (
           <li
             className={cn(
-              `inline-block font-medium
-               after:block after:h-[3px] 
-               after:w-0 after:bg-sky-500 after:transition-[width]
+              `inline-block font-medium text-white
+               after:block after:h-[1.5px] 
+               after:w-0 after:bg-brand after:transition-[width]
                after:duration-300 after:content-[''] 
                hover:after:w-full hover:after:transition-[width] hover:after:duration-300
             `,
-              isActive ? ' text-sky-500' : '',
+              isActive ? ' text-brand' : '',
             )}
             key={link.href}
           >
