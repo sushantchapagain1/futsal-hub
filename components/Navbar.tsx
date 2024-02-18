@@ -4,19 +4,12 @@ import { Menu } from 'lucide-react';
 import NavLink from './NavLink';
 import { Button } from './ui/button';
 
-const links = [
-  { label: 'Home', href: '/' },
-  { label: 'How it works', href: '/how-it-works' },
-  { label: 'Services', href: '/pricing' },
-  { label: 'About Us', href: '/about' },
-];
-
 function Navbar() {
   return (
     <nav className="flex items-center justify-between p-3">
       <Logo />
       <div className="flex items-center sm:gap-6">
-        <NavLink links={links} />
+        <NavLink />
         <Button
           variant="secondary"
           size="default"
