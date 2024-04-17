@@ -1,12 +1,14 @@
 import Hero from '@/components/Hero';
+import Navbar from '@/components/Navbar';
 import Searchbar from '@/components/Searchbar';
 
 export default function Home() {
   return (
-    <div>
+    <>
+      <Navbar />
       <Hero />
       <Searchbar />
-      <main className="container"></main>
-    </div>
+      <main className="mt-8"> main app</main>
+    </>
   );
 }

@@ -11,7 +11,7 @@ import { Button } from './ui/button';
 
 function Searchbar() {
   return (
-    <form className="flex items-center justify-center md:-m-8">
+    <form className="flex items-center justify-center md:-my-8">
       <div className="flex flex-col gap-3 rounded bg-slate-200 p-1 shadow-lg md:flex-row">
         <Input placeholder="Kathmandu" />
         <Input type="date" placeholder="Booking Date" color="red" />

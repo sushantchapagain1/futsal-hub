@@ -5,15 +5,14 @@ import Navbar from './Navbar';
 function Hero() {
   return (
     <div className="bg-brand">
-      <div className="lg:container">
-        <Navbar />
+      <div className="container">
         <div className="flex flex-col items-center justify-between gap-9 py-16 sm:mx-5 lg:flex-row">
           {/* left side */}
           <div className="self-center">
             <h2 className="mb-3 text-xl font-extrabold text-white sm:text-2xl md:text-5xl">
               Find available futsal near you
             </h2>
-            <p className="text-xl text-white">
+            <p className="mx-3 text-base text-white">
               Search and book your matching futsal by location, price,
               availiblity and more.
             </p>
@@ -28,6 +27,7 @@ function Hero() {
             />
           </div>
         </div>
+        <div />
       </div>
     </div>
   );

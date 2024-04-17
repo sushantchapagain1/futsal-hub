@@ -6,20 +6,25 @@ import { Button } from './ui/button';
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between p-3">
-      <Logo />
-      <div className="flex items-center sm:gap-6">
-        <NavLink />
-        <Button
-          variant="secondary"
-          size="default"
-          className="hidden text-base font-medium sm:block"
-        >
-          Login
-        </Button>
-        <Button variant="ghost" className="cursor-pointer text-white sm:hidden">
-          <Menu />
-        </Button>
+    <nav className="bg-brand">
+      <div className="container flex items-center justify-between p-3">
+        <Logo />
+        <div className="flex items-center sm:gap-6">
+          <NavLink />
+          <Button
+            variant="secondary"
+            size="default"
+            className="hidden text-base font-medium sm:block"
+          >
+            Login
+          </Button>
+          <Button
+            variant="ghost"
+            className="cursor-pointer text-white sm:hidden"
+          >
+            <Menu />
+          </Button>
+        </div>
       </div>
     </nav>
   );
