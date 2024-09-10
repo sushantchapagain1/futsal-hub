@@ -1,7 +1,5 @@
-import React from 'react';
-import Sidenav from './_components/Sidenav';
-
-import HeaderItems from './_components/HeaderItems';
+import Sidenav from './_components/side-nav';
+import HeaderItems from './_components/header-items';
 
 function AdminLayout({ children }: { children: React.ReactNode }) {
   return (

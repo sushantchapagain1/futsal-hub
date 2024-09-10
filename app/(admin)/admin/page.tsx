@@ -1,8 +1,6 @@
-import React from 'react';
-
-import Heading from '../_components/Heading';
-import Stats from '../_components/Stats';
-import RecentBookings from '../_components/RecentBookings';
+import Heading from '../_components/heading';
+import Stats from '../_components/stats';
+import RecentBookings from '../_components/recent-bookings';
 
 function AdminHomePage() {
   return (

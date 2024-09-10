@@ -1,8 +1,7 @@
 import { currencyFormatter } from '@/lib/utils';
-import { Currency, IndianRupee, OrbitIcon, Zap } from 'lucide-react';
+import { OrbitIcon, Zap } from 'lucide-react';
 
 import Image from 'next/image';
-import React from 'react';
 
 const grounds = [
   {
@@ -37,7 +36,6 @@ function page() {
       {grounds.map((ground) => (
         <div key={ground.id}>
           <Image
-            // src={ground.image}
             src="/hero.jpeg"
             alt={`${ground.name}'s image`}
             className="rounded-t border-x border-t"

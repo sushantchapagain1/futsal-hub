@@ -1,5 +1,4 @@
-import React from 'react';
-import StatCard from '../_components/StatCard';
+import StatCard from './stat-card';
 import { Banknote, BarChart, Briefcase } from 'lucide-react';
 
 function Stats({

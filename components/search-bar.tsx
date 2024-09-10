@@ -1,4 +1,3 @@
-import React from 'react';
 import { Input } from './ui/input';
 import {
   Select,
@@ -8,13 +7,14 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Button } from './ui/button';
+import BookingDatePicker from './booking-date-picker';
 
 function Searchbar() {
   return (
-    <form className="flex items-center justify-center md:-my-8">
-      <div className="flex flex-col gap-3 rounded bg-slate-200 p-1 shadow-lg md:flex-row">
+    <form className="mt-3 flex items-center justify-center md:-my-6">
+      <div className="flex w-full flex-col gap-3 rounded p-1 shadow-lg md:flex-row md:bg-[#b3c4df]">
         <Input placeholder="Kathmandu" />
-        <Input type="date" placeholder="Booking Date" color="red" />
+        <BookingDatePicker />
 
         <Select>
           <SelectTrigger>

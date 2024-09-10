@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   CalendarCheck2,
   LandPlot,
@@ -7,8 +6,8 @@ import {
   Users,
 } from 'lucide-react';
 
-import AdminLogo from './AdminLogo';
-import SideLinks from './SideLinks';
+import AdminLogo from './admin-logo';
+import SideLinks from './side-links';
 
 const links = [
   { label: 'Dashboard', href: '/admin', icon: <LayoutDashboard /> },

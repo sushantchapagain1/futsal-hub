@@ -2,7 +2,6 @@
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React from 'react';
 
 type Links = {
   links: {
@@ -27,11 +26,16 @@ function SideLinks({ links }: Links) {
               href={link.href}
               className={cn(
                 'flex w-fit space-x-3 rounded-md p-3 font-medium md:w-auto md:p-3',
-                isActive && 'bg-secondary',
+                isActive && 'bg-secondary text-primary',
               )}
             >
-              <span className={cn(isActive && 'text-brand')}>{link.icon}</span>
-              <span className="hidden md:block">{link.label}</span>
+              <span>{link.icon}</span>
+              {/* TODO layout moving if bold */}
+              <span
+                className={cn('hidden md:block', isActive && 'font-semibold ')}
+              >
+                {link.label}
+              </span>
             </Link>
           </li>
         );

@@ -1,9 +1,9 @@
 'use client';
-import React from 'react';
+
 import { Input } from '@/components/ui/input';
 import { LogOut, Sun, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import AvatarCustom from '@/components/Avatar';
+import AvatarCustom from '@/components/avatar';
 
 function HeaderItems() {
   return (
